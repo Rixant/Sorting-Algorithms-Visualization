@@ -9,7 +9,7 @@
 }
 
 
-.canvas-area{
+#canvas-area{
     height: 500px;
 }
 
@@ -35,3 +35,22 @@
 .sort-buttons button{
     margin-right: 20px;
 }
+
+
+#canvas-area{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+#canvas-area .bar {
+    width: 100px;
+    background: orange;
+    border: 2px solid black;
+    /* transition-property: all; */
+    /* transition-duration: 0.7s;
+    transition-timing-function: ease; */
+  }

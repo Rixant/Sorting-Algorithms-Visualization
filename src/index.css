@@ -1,0 +1,58 @@
+.header{
+  display: flex;
+  justify-content: center;
+  background-color: #333333;
+}
+
+.header h1{
+  color: white;
+}
+
+
+.canvas{
+  height: 400px;
+}
+
+
+.left-buttons{
+  width: 20%;
+  float: left;
+  margin-left: 10%;
+}
+
+
+.right-buttons{
+  float: right;
+  margin-right: 10%;
+}
+
+
+.sort-buttons{  
+ 
+}
+
+.sort-buttons button{
+  margin-right: 20px;
+}
+
+
+.canvas{
+  width: 90%;
+  margin: auto;
+  position: relative;
+  bottom:0px;
+  text-align: center;
+  margin-top: 100px;
+  
+
+}
+
+.canvas .bar {
+  width: 0.9vh;
+  background: orange;
+  display: inline-block;
+  border: 1px solid black;
+  /* transition-property: all; */
+  /* transition-duration: 0.7s;
+  transition-timing-function: ease; */
+}

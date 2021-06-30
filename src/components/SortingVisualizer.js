@@ -1,16 +1,18 @@
 import React from 'react';
 import {useState} from 'react';
+import bubbleSort from '../Algorithms/BubbleSort'
 
 
 function SortingVisualizer(){
 
-
+    // states
     const [arr, setArray] = useState([]);
 
 
+    // remove existing bars, generate new array and convert them into bars
     function initializeArray(){
         destroyArray();
-        for(let i = 0; i < 200; i++) {        
+        for(let i = 0; i < 100; i++) {        
             var r = Math.floor(Math.random() * 100) + 1;
             if(arr.indexOf(r) === -1) arr.push(r);
             var bar = document.createElement('div');
@@ -21,17 +23,19 @@ function SortingVisualizer(){
         }
         setArray(arr);
         console.log(arr);
-    }
+    }//end initializeArray
 
 
 
+    // remove all the existing old bars 
     function destroyArray(){
         document.querySelectorAll(".bar").forEach((node) => {
             node.remove();
         });
-    }
+    }//end destroyArray
 
-    
+
+    //return
     return(
         <div className="container-fluid">
         <div className="header">
@@ -40,7 +44,6 @@ function SortingVisualizer(){
 
         <div className="canvas">
          
-    
         </div>
 
         <div className="sort-buttons">
@@ -48,16 +51,16 @@ function SortingVisualizer(){
                 <button type="button" id="" className="btn btn-primary new-array" onClick={initializeArray} >New Array</button>
             </div>
             <div className="right-buttons">
-                <button type="button" className="btn btn-dark bubble sort" >Bubble sort</button>
+                <button type="button" className="btn btn-dark bubble sort" onClick={()=> bubbleSort(arr)} >Bubble sort</button>
                 <button type="button" className="btn btn-dark bubble sort" >Insertion sort</button>
                 <button type="button" className="btn btn-dark bubble sort" >Selection sort</button>
                 <button type="button" className="btn btn-dark bubble sort" >Merge sort</button>
             </div>
         </div>
     </div>
-    )
+    )//end return
 
-}
+}//end main function
 
 
 

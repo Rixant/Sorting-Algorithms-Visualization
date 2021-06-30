@@ -48,10 +48,10 @@
 }
 
 .canvas .bar {
-  width: 0.9vh;
-  background: orange;
+  width: 1vh;
+  background: darkgreen;
   display: inline-block;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /* transition-property: all; */
   /* transition-duration: 0.7s;
   transition-timing-function: ease; */

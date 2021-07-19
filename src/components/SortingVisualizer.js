@@ -1,6 +1,8 @@
 import React from 'react';
 import {useState} from 'react';
 import bubbleSort from '../Algorithms/BubbleSort'
+import insertionSort from '../Algorithms/InsertionSort'
+import selectionSort from '../Algorithms/SelectionSort'
 
 
 function SortingVisualizer(){
@@ -14,7 +16,8 @@ function SortingVisualizer(){
         destroyArray();
         for(let i = 0; i < 100; i++) {        
             var r = Math.floor(Math.random() * 100) + 1;
-            if(arr.indexOf(r) === -1) arr.push(r);
+            // if(arr.indexOf(r) === -1) 
+            arr.push(r);
             var bar = document.createElement('div');
             bar.className = 'bar'
             bar.style.height = r/2 + "vh";
@@ -42,18 +45,17 @@ function SortingVisualizer(){
             <h1>Sorting Visualizer</h1>
         </div>
 
-        <div className="canvas">
-         
+        
+        <div className="canvas"> 
         </div>
-
-        <div className="sort-buttons">
+        <div className="buttons-area">
             <div className="left-buttons">
                 <button type="button" id="" className="btn btn-primary new-array" onClick={initializeArray} >New Array</button>
             </div>
             <div className="right-buttons">
-                <button type="button" className="btn btn-dark bubble sort" onClick={()=> bubbleSort(arr)} >Bubble sort</button>
-                <button type="button" className="btn btn-dark bubble sort" >Insertion sort</button>
-                <button type="button" className="btn btn-dark bubble sort" >Selection sort</button>
+                <button type="button" className="btn btn-dark bubble sort" onClick={()=> bubbleSort(document.getElementsByClassName('bar'))} >Bubble sort</button>
+                <button type="button" className="btn btn-dark bubble sort" onClick={()=> insertionSort(document.getElementsByClassName('bar'))}>Insertion sort</button>
+                <button type="button" className="btn btn-dark bubble sort" onClick={()=> selectionSort(document.getElementsByClassName('bar'))} >Selection sort</button>
                 <button type="button" className="btn btn-dark bubble sort" >Merge sort</button>
             </div>
         </div>

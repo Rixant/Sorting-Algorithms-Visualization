@@ -1,16 +1,22 @@
 import React from 'react';
 
+const delay = 1;
 
-export default function swap(el1,el2)
+export default async function swap(el1,el2)
 {
 
-const style1 = window.getComputedStyle(el1);
-const style2 = window.getComputedStyle(el2);
+    // change the color of the bar to be swapped to red
+    el1.style.background = "#f00000";
+    el2.style.background = "#f00000";
+    await new Promise(resolve => setTimeout(resolve, delay));
 
-const transform1 = style1.getPropertyValue("height");
-const transform2 = style2.getPropertyValue("height");
+    // get the height of the bars
+    let heightBar1 = el1.style.height;
+    let heightBar2 = el2.style.height;
 
-el1.style.height = transform2;
-el2.style.height = transform1;
+    // swapping the height
+    el1.style.height = heightBar2;
+    el2.style.height = heightBar1;
+    await new Promise(resolve => setTimeout(resolve, delay));
 
 }

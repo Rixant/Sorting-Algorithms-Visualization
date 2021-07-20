@@ -2,7 +2,7 @@ import swap from './swap';
 
 export default async function insertionSort(arrayBar){
     
-    const delay = 5;
+    const delay = 0;
     let n = arrayBar.length;
     console.log(n);
 
@@ -13,18 +13,16 @@ export default async function insertionSort(arrayBar){
        let key = parseInt(arrayBar[i].style.height);
        console.log(key)
 
-       // change the color of the bar to be compared to blue
-       arrayBar[j+1].style.background = "#0072ff";
-       arrayBar[j].style.background = "#0072ff";
+       arrayBar[j+1].style.background = "yellow";
+       arrayBar[j].style.background = "blue";
        await new Promise(resolve => setTimeout(resolve, delay));
 
         while (j >= 0 && parseInt(arrayBar[j].style.height) > key) {
 
             await swap(arrayBar[j+1], arrayBar[j]);
 
-            // change color back to normal
-            arrayBar[j+1].style.background = "#ffd000";
-            arrayBar[j].style.background = "#0072ff";
+            arrayBar[j+1].style.background = "darkgreen";
+            arrayBar[j].style.background = "darkgreen";
             await new Promise(resolve => setTimeout(resolve, delay));
 
             j--;

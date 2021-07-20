@@ -3,6 +3,7 @@ import {useState} from 'react';
 import bubbleSort from '../Algorithms/BubbleSort'
 import insertionSort from '../Algorithms/InsertionSort'
 import selectionSort from '../Algorithms/SelectionSort'
+import mergeSort from '../Algorithms/MergeSort'
 
 
 function SortingVisualizer(){
@@ -20,8 +21,9 @@ function SortingVisualizer(){
             arr.push(r);
             var bar = document.createElement('div');
             bar.className = 'bar'
-            bar.style.height = r/2 + "vh";
-            bar.style.color = "red";
+            bar.style.height = Math.ceil(r/2) + "vh";
+            // bar.style.width =  0.2+ "vh";
+            // bar.style.color = "red";
             document.querySelector('.canvas').appendChild(bar);
         }
         setArray(arr);
@@ -56,7 +58,7 @@ function SortingVisualizer(){
                 <button type="button" className="btn btn-dark bubble sort" onClick={()=> bubbleSort(document.getElementsByClassName('bar'))} >Bubble sort</button>
                 <button type="button" className="btn btn-dark bubble sort" onClick={()=> insertionSort(document.getElementsByClassName('bar'))}>Insertion sort</button>
                 <button type="button" className="btn btn-dark bubble sort" onClick={()=> selectionSort(document.getElementsByClassName('bar'))} >Selection sort</button>
-                <button type="button" className="btn btn-dark bubble sort" >Merge sort</button>
+                <button type="button" className="btn btn-dark bubble sort" onClick={()=> mergeSort(document.getElementsByClassName('bar'), 0,document.getElementsByClassName('bar').length - 1  )}  >Merge sort</button>
             </div>
         </div>
     </div>

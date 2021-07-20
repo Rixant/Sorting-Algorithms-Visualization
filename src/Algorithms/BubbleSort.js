@@ -1,7 +1,7 @@
 import swap from './swap';
 
 export default async function bubbleSort(arrayBar){
-    const delay = 1
+    const delay = 0;
     let n = arrayBar.length;
     console.log(n);
     // const arrayBar = document.getElementsByClassName('bar');
@@ -10,7 +10,7 @@ export default async function bubbleSort(arrayBar){
     for (var i = 0; i < (n-1); i++) {
         for (var j = 0; j < (n - i - 1); j++) {
 
-            arrayBar[j].style.background = "red";
+            arrayBar[j].style.background = "yellow";
             arrayBar[j+1].style.background = "blue";
             await new Promise(resolve => setTimeout(resolve, delay));
 

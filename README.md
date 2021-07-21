@@ -1,4 +1,4 @@
-# Dashboard
+# Sorting Algorithms Visualization
 
 ## Introduction
 A web application that visualizes the 5 different sorting algorithms: BubbleSort, InsertionSort, SelectionSort, MergeSort. It is built using React and Bootstrap as a CSS framework.

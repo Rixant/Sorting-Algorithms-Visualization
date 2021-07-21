@@ -11,6 +11,10 @@ function SortingVisualizer(){
     // states
     const [arr, setArray] = useState([]);
 
+    React.useEffect(() => {
+       initializeArray()
+      }, []);
+
 
     // remove existing bars, generate new array and convert them into bars
     function initializeArray(){

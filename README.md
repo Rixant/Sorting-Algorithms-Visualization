@@ -8,15 +8,15 @@ A web application that visualizes the 5 different sorting algorithms: BubbleSort
 <h4>1. Bubble Sort </h4>
 <p> Time Complexity: O(n^2) </p>
 <p> Space Complexity: O(1) </p>
-    <img src="https://github.com/Rixant/Sorting-Algorithms-Visualization/blob/f8e09aa411fc962e2b9281bbc0bb60372e6aac6e/demo/bubblesort.gif" alt="Demo showcase gif" title="App Demo"  width="40%" height="40%"/>
+    <img src="https://github.com/Rixant/Sorting-Algorithms-Visualization/blob/f8e09aa411fc962e2b9281bbc0bb60372e6aac6e/demo/bubblesort.gif" alt="Demo showcase gif" title="App Demo"  width="80%" height="80%"/>
 <h4>2. Insertion Sort </h4>
 <p> Time Complexity: O(n^2) </p>
 <p> Space Complexity: O(1) </p>
-     <img src="https://github.com/Rixant/Sorting-Algorithms-Visualization/blob/f8e09aa411fc962e2b9281bbc0bb60372e6aac6e/demo/insertsortdemo.gif" alt="Demo showcase gif" title="App Demo"  width="40%" height="40%"/> 
+     <img src="https://github.com/Rixant/Sorting-Algorithms-Visualization/blob/f8e09aa411fc962e2b9281bbc0bb60372e6aac6e/demo/insertsortdemo.gif" alt="Demo showcase gif" title="App Demo"  width="80%" height="80%"/> 
 <h4>4. Merge Sort </h4>
 <p> Time Complexity: O(nlogn) </p>
 <p> Space Complexity: O(n) </p>
-     <img src="https://github.com/Rixant/Sorting-Algorithms-Visualization/blob/f8e09aa411fc962e2b9281bbc0bb60372e6aac6e/demo/mergesortdemo.gif" alt="Demo showcase gif" title="App Demo"  width="40%" height="40%"/> 
+     <img src="https://github.com/Rixant/Sorting-Algorithms-Visualization/blob/f8e09aa411fc962e2b9281bbc0bb60372e6aac6e/demo/mergesortdemo.gif" alt="Demo showcase gif" title="App Demo"  width="80%" height="80%"/> 
  </p>
 
 ## Languges Used

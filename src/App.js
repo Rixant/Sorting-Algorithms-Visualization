@@ -1,11 +1,11 @@
 import React from 'react';
-import SortingVisualizer from './components/SortingVisualizer';
+import Main from './components/MainComponent';
 
 
 function App() {
   return (
     <div>
-      <SortingVisualizer />
+      <Main />
     </div>
   );
 }

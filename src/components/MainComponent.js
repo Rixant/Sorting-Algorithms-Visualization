@@ -1,12 +1,13 @@
 import React from 'react';
 import {useState} from 'react';
-import bubbleSort from '../Algorithms/BubbleSort'
-import insertionSort from '../Algorithms/InsertionSort'
-import selectionSort from '../Algorithms/SelectionSort'
-import mergeSort from '../Algorithms/MergeSort'
+import bubbleSort from '../Algorithms/BubbleSort';
+import insertionSort from '../Algorithms/InsertionSort';
+import selectionSort from '../Algorithms/SelectionSort';
+import mergeSort from '../Algorithms/MergeSort';
+import quickSort from '../Algorithms/QuickSort';
 
 
-function SortingVisualizer(){
+function Main(){
 
     // states
     const [arr, setArray] = useState([]);
@@ -63,6 +64,7 @@ function SortingVisualizer(){
                 <button type="button" className="btn btn-dark bubble sort" onClick={()=> insertionSort(document.getElementsByClassName('bar'))}>Insertion sort</button>
                 <button type="button" className="btn btn-dark bubble sort" onClick={()=> selectionSort(document.getElementsByClassName('bar'))} >Selection sort</button>
                 <button type="button" className="btn btn-dark bubble sort" onClick={()=> mergeSort(document.getElementsByClassName('bar'), 0,document.getElementsByClassName('bar').length - 1  )}  >Merge sort</button>
+                <button type="button" className="btn btn-dark bubble sort" onClick={()=> quickSort(0,document.getElementsByClassName('bar').length - 1, document.getElementsByClassName('bar'))}  >Quick sort</button>
             </div>
         </div>
     </div>
@@ -72,4 +74,4 @@ function SortingVisualizer(){
 
 
 
-export default SortingVisualizer;
+export default Main;

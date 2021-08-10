@@ -5,8 +5,8 @@ const delay = 0;
 export default async function swap(el1,el2)
 {
 
-    el1.style.background = "#f00000";
-    el2.style.background = "#f00000";
+    el1.style.background = "darkgreen";
+    el2.style.background = "darkgreen";
   
     let heightBar1 = el1.style.height;
     let heightBar2 = el2.style.height;
